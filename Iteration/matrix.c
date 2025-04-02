@@ -75,7 +75,6 @@ void upperLowerTriangular(int A[MAX][MAX], int rows, int cols) {
 int main() {
     int A[MAX][MAX], B[MAX][MAX], C[MAX][MAX];
     int rows, cols, choice;
-
     while (1) {
         printf("\nMatrix Operations Menu:\n");
         printf("1. Addition\n2. Subtraction\n3. Transpose\n4. Multiply\n5. Upper & Lower Triangular Matrices\n6. Exit\n");
@@ -84,7 +83,6 @@ int main() {
 
         if (choice == 6)
             break;
-
         printf("Enter number of rows and columns: ");
         scanf("%d %d", &rows, &cols);
 
@@ -106,7 +104,10 @@ int main() {
             transposeMatrix(A, B, rows, cols);
             printf("Transpose of the Matrix:\n");
             printMatrix(B, cols, rows);
-        } else if (choice == 4) {
+        } 
+        
+        
+        else if (choice == 4) {
             int c2;
             printf("Enter columns for second matrix: ");
             scanf("%d", &c2);
@@ -120,6 +121,4 @@ int main() {
             upperLowerTriangular(A, rows, cols);
         }
     }
-    return 0;
-}
-5
+    return 0;}
