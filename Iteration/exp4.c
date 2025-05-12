@@ -3,7 +3,7 @@
 #include <string.h>
 
 #define MAX 100  
- struct Employee {
+ struct Experiment {
     int id;
     char name[50];
     char role[10];  
@@ -11,7 +11,7 @@
 };
 
 int main() {
-   struct Employee employees[MAX];
+   struct Experiment employees[MAX];
     int n;
     FILE *manager,*employee;
 
@@ -23,7 +23,7 @@ int main() {
         printf("\nEnter details for employee %d:\n", i + 1);
         printf("ID: ");
         scanf("%d", &employees[i].id);
-        printf("Name: ");
+        printf("Name: ");2
         scanf(" %[^\n]", employees[i].name); 
         printf("Role (Manager/Worker): ");
         scanf("%s", employees[i].role);

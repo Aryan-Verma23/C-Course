@@ -1,1 +1,1 @@
-ID: 1, Name: milan saini, Salary: 200000.00
+ID: 1, Name: Milan, Salary: 1000000.00
